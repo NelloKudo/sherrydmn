@@ -1,0 +1,12 @@
+[Unit]
+Description=sherrydmn
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sherrydmn
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
